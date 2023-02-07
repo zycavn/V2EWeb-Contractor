@@ -1,0 +1,1361 @@
+// VARIABLES
+// Implement corporate branding
+// Override bootstrap defaults
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// BASE
+// Base theme variables for this App
+// Transformr Palette:
+// Orange:	#e05b36
+// Purple:	#9e1f63
+// L Blue:	#56addf
+// D Blue:	#0066b2
+// Green:	  #95c43e
+// Yellow:	#f1b934
+// Gray:	  #a6a8ab
+// scss-docs-start color-variables
+$dark-blue: #2e3191;
+$light-blue: #0066b2;
+$orange: #fb8d02;
+$yellow: #fd9104;
+$purple: #9e1f63;
+$green: #95c43e;
+$grey: #a6a8ab;
+$black: #000000;
+$dark-grey: #424242;
+$red: #ff0000;
+$white: #ffffff;
+$dark-grey: #424242;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue": $blue,
+  "dark-blue": $dark-blue,
+  "light-blue": $light-blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $grey,
+  "gray-dark": $gray-800,
+  "black": $black,
+) !default;
+// scss-docs-end colors-map
+
+// PUBLIC
+// Overrides for Public Module
+// @import 'themes/base';
+
+// scss-docs-start theme-color-variables
+$primary: $orange;
+$secondary: $black;
+$tertiary: $yellow;
+$success: $green;
+$error: $red;
+$dashboard-contrast: $black;
+$primary-contrast: $black;
+// scss-docs-end theme-color-variables
+
+// VARIABLES
+// @import 'abstracts/variables';
+// General variables
+$header-margin: 5.8em;
+$dashboard-menu-width: 16em;
+$logo-padding-offset: 0.64rem;
+$main-menu-padding-top: 0.42em;
+$main-menu-padding-left: 0.3em;
+
+// General
+$base-bg: $white;
+$font-size: 1em;
+
+$primary-900: tint-color($primary, 45%);
+$primary-800: tint-color($primary, 50%);
+$primary-700: tint-color($primary, 55%);
+$primary-600: tint-color($primary, 60%);
+$primary-500: tint-color($primary, 65%);
+$primary-400: tint-color($primary, 70%);
+$primary-300: tint-color($primary, 75%);
+$primary-200: tint-color($primary, 80%);
+$primary-100: tint-color($primary, 85%);
+$primary-050: tint-color($primary, 90%);
+$primary-010: tint-color($primary, 98%);
+$primary-005: tint-color($primary, 99%);
+
+// PUBLIC
+// Overrides for Public Module
+// @import 'themes/base';
+
+// scss-docs-start theme-color-variables
+$primary-admin:       $dark-grey;
+$primary-transformr:  $blue;
+$primary-buildr:      $purple;
+$primary-approvr:     $green;
+$primary-writr:       $light-blue;
+$primary-reportr:     $yellow;
+$primary-discovr:     $dark-blue;
+$primary-mappr:       $orange;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dashboard-contrast": $dashboard-contrast,
+  "primary-contrast": $primary-contrast,
+);
+// scss-docs-end theme-colors-map
+
+// General variables
+$header-margin: 5.8em;
+$dashboard-menu-width: 16em;
+$logo-padding-offset: 0.64rem;
+$main-menu-padding-top: 0.32em;
+$main-menu-padding-left: 0.3em;
+
+// General
+$base-bg: $white;
+$font-size: 1em;
+
+$primary-900: tint-color($primary, 45%);
+$primary-800: tint-color($primary, 50%);
+$primary-700: tint-color($primary, 55%);
+$primary-600: tint-color($primary, 60%);
+$primary-500: tint-color($primary, 65%);
+$primary-400: tint-color($primary, 70%);
+$primary-300: tint-color($primary, 75%);
+$primary-200: tint-color($primary, 80%);
+$primary-100: tint-color($primary, 85%);
+$primary-050: tint-color($primary, 90%);
+$primary-010: tint-color($primary, 98%);
+
+
+// RESET
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body { 
+  height: 100%;
+}
+main {
+  height: calc(100vh - 6rem);
+  padding-bottom: 1rem;
+}
+.title {
+  color: $white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.dashboard-title {
+  padding-bottom: 0.4rem;
+}
+.img-logo-header {
+  height: 3.2em;
+  padding-left: 0.52em;
+  padding-right: 0em;
+  padding-top: 0.14em;
+  padding-bottom: 0.14em;
+}
+.page-layout {
+  padding-bottom: 4rem;
+  height: 100vh
+}
+.page-content {
+  padding-top: 0.6rem;
+  padding-right: 2rem;
+}
+.page-content-tilelayout {
+  padding-top: 0;
+  padding-right: 2rem;
+}
+.page-app-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.68rem;
+  padding-right: 2rem;
+}
+.module-heading {
+  // padding-left: 0.8rem;
+  padding-left: 0;
+}
+
+.list-heading {
+  padding-top: 0.28rem;
+  padding-bottom: 0.2rem;
+}
+.radio-buttons-horizontal {
+  display: flex;
+}
+.radio-button-spacer {
+  margin-right: 1.2rem;
+}
+.k-button-icon {
+  padding-right: 0.6rem;
+  padding-top: 0.1rem;
+}
+
+.k-stepper-invalid {
+  border-color: $black;  
+  background-color: $red;  
+}
+
+// TYPOGRAPHY
+.hexagon {
+  stroke-width: 2;
+}
+h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.14rem;
+  opacity: 0.72;
+  font-weight: 500;
+}
+h6 {
+  font-size: 1.08rem;
+  opacity: 0.6;
+  font-weight: 400;
+}
+.h-vision {
+  color: $blue;
+}
+.h-section {
+  margin-top: 1.8rem;
+}
+.callout {
+  color: $primary;
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.4;
+}
+a {
+  color: $primary;
+  text-decoration: none;
+}
+.sub-text {
+  font-size: 0.7rem;
+}
+.small-link {
+  font-size: 0.7rem;
+}
+li:hover {
+  cursor: pointer;
+  color: $danger;
+}
+.alert-heading {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+.alert-content {
+  margin-bottom: 0.2rem;
+}
+
+// GRID
+main > .container {
+  padding-top: 2.8rem;
+  padding-bottom: 0px;
+  padding-right: 2rem;
+  padding-left: 9.2rem;
+}
+main > .container-fluid {
+  padding-top: $header-margin;
+  padding-bottom: 0px;
+  padding-right: 2rem;
+  padding-left: 18rem;
+}
+.authenticated-route-container {
+  padding-top: 2.8rem;
+  padding-bottom: 0px;
+  padding-right: 2rem;
+  padding-left: 9.2rem;
+}
+.public-route-container {
+  padding-top: 5rem;
+  padding-bottom: 0px;
+  padding-right: 2rem;
+  padding-left: 1.16rem;
+}
+.app-route-container {
+  padding-top: 4.48rem;
+  padding-bottom: 0px;
+  padding-right: 0rem;
+  padding-left: 0rem;
+  height: calc(100vh - 2.4rem);
+}
+.col-logo {
+  text-align: left;
+  -ms-flex: 0 0 15.44rem;
+  flex: 0 0 15.44rem;
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-left: $logo-padding-offset !important;
+}
+.row-main-menu {
+  width: 100%;
+}
+.col-form-header {
+  padding-top: 0.24em;
+  padding-left: 0;
+}
+.row-toolbar {
+  margin-left: 0rem;
+  margin-right: 1.4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.col-toolbar {
+  padding-left: 0;
+}
+.row-app-toolbar {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.row-list-breadcrumb {
+  padding-bottom: 0.6rem;
+}
+.row-list-error-msg {
+  margin-top: 0.6rem;
+}
+.grid-row {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+td.buttoncell {
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.1rem !important;
+  padding-left: 0.25rem !important;
+  padding-right: 0.1rem !important;
+  height: 100% !important;
+}
+.row-actionbar {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid $gray-200;
+}
+.row-heading-section {
+  margin-top: 3.2rem;
+  margin-bottom: 1rem;
+}
+.row-sub-heading-section {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+.row-heading {
+  margin-bottom: 1rem;
+}
+.row-content {
+  margin-top: 1.2rem;
+}
+.checkbox-grid {
+  border: 1px solid $primary;
+}
+.k-checkbox {
+  border: 1px solid $primary !important;
+}
+.k-radio-list {
+  flex-flow: column nowrap !important;
+}
+
+
+// HEADER
+.heading-row {
+  margin-bottom: 1rem;
+}
+.page-heading {
+  margin-top: 0.6rem;
+  padding-top: 5.8rem;
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+}
+.page-heading-dashboard {
+  padding-top: 0.72rem;
+  padding-bottom: 1rem;
+}
+.row-app-components-area {
+  padding-top: 1.2rem;
+}
+
+// FOOTER
+.footer {
+  font-size: 0.8rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: $dark-grey;
+}
+.footer-copyright {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: $dark-grey;
+}
+a.footer-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: $dark-grey;
+}
+
+
+/* TODO: Flex into a smaller menu when smaller screen size */
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+// @media screen and (max-height: 450px) {
+//   .sidenav {
+//     padding-top: 15px;
+//   }
+//   .sidenav a {
+//     font-size: 18px;
+//   }
+// }
+
+// TileLayout
+.container-tilelayout {
+  padding: 0;
+}
+.row-tilelayout {
+  margin-bottom: 0.6rem;
+}
+.row-tilelayout-header {
+  margin-top: 3.2rem;
+  margin-bottom: 0.6rem;
+}
+.row-tilelayout-actions {
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+.row-stepper {
+  margin-top: 2.4rem;
+  margin-bottom: 3.6rem;
+}
+
+h6.tilelayout-section {
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
+.tilelayout-label {
+  color: $gray-600;
+  font-weight: 500;
+}
+
+// NAV
+.navbar {
+  padding-top: 0.24rem;
+  border-bottom-color: $primary;
+  border-bottom-style: solid;
+  border-bottom-width: 0.28rem;
+  background-color: $primary-005;
+}
+.kendo-btn-page {
+  color: $primary !important;
+  border-color: $primary !important;
+}
+.kendo-btn-page:hover {
+  color: $white !important;
+  background-color: $primary !important;
+}
+.kendo-btn-alert {
+  color: $red !important;
+  border-color: $red !important;
+}
+.kendo-btn-alert:hover {
+  color: $white !important;
+  background-color: $red !important;
+}
+.kendo-nav-button {
+  margin-right: 0 !important;
+  padding: 0.4rem 0.6rem !important;
+}
+.toolbar-popup-layout {
+  width: 20rem;
+  padding: 1.2rem 0;
+}
+.toolbar-popup-link-row {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.toolbar-displayname-layout {
+  margin-right: 0.6rem;
+}
+
+// FORMS
+.form-dialog-column {
+  border-left: 1px solid $gray-200;
+  border-bottom: 1px solid $gray-200;
+}
+.form-dialog-container {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  // height: calc(100vh - 130px);
+  overflow: auto;
+}
+.form-button-col {
+  text-align: left;
+  margin-top: 0.24rem;
+}
+.row-header-actions {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  background-color: $gray-100;
+  border-bottom: 1px solid $gray-200;
+}
+.error-message-row {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.form-row {
+  margin-bottom: 2.4rem;
+}
+.search-textbox-row {
+  margin-bottom: 1rem;
+}
+.form-row-alert-bottom {
+  margin-bottom: 1.4rem !important;
+}
+.form-row-no-bottom {
+  margin-bottom: 0 !important;
+}
+.form-row-margin-top {
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+}
+.form-row-hidden {
+  display: none;
+}
+.alert-row {
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+.form-alert-row {
+  margin-top: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+.form-label {
+  font-weight: 600;
+  color: $gray-900;
+}
+.k-form-hint {
+  margin-top: 0.6rem;
+  color: $gray-600;
+}
+.k-dropdownlist-hint {
+  margin-top: 0.24rem;
+  font-size: 0.6rem;
+  font-style: italic;
+  color: $gray-600;
+}
+.form-freetext-spacer {
+  margin-top: 0.4rem;
+}
+.form-checkbox-row {
+  margin-bottom: 0.76rem;
+}
+.form-checkbox-col {
+  margin-bottom: 0.6rem;
+}
+.form-question-spacer {
+  margin-top: 0.4rem;
+  width: 95% !important;
+}
+.form-tooltip {
+  display: inline;
+}
+.form-info-icon {
+  margin-left: 0.6rem;
+}
+.save-success-notification {
+  font-size: 1rem !important;
+  background-color: $success !important;
+  color: $white !important;
+  padding: 1rem 1.2rem !important;
+  margin-right: 2rem !important;
+}
+.save-failed-notification {
+  font-size: 1rem !important;
+  background-color: $error !important;
+  color: $white !important;
+  padding: 1rem 1.2rem !important;
+  margin-right: 2rem !important;
+}
+.contact {
+  display: flex;
+  height: 4.2rem;
+  padding: 0.6rem;
+  padding-left: 0.8rem;
+  align-items: center;
+  border: 1px solid $primary-600 !important;
+}
+.contact-details {
+  flex: 1;
+  margin-left: 1rem;
+}
+.contact-name {
+  color: $gray-600;
+  font-weight: 500;
+}
+.contact-email {
+  font-size: 0.7rem;
+  color: $gray-600;
+}
+.btn-listview {
+  color: $primary;
+  font-size: 0.96rem;
+}
+
+// KENDO
+// Reference: https://www.telerik.com/kendo-angular-ui/components/styling/theme-default/customization-buttons/
+// Buttons
+$button-padding-x: 1rem;
+$button-padding-y: 0.4rem;
+$button-border-radius: 0.12rem;
+
+// Override bootstrap defaults
+@import "~@progress/kendo-theme-default/dist/all.scss";
+
+// Manual overrides
+// Menu
+.main-menu {
+  font-size: 1.12rem;
+  font-weight: 400;
+  padding-left: 0.4rem;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+.main-menu-overflow {
+  font-size: 1.12rem;
+  font-weight: 400;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+.main-menu-text {
+  display: block;
+}
+.main-menu-shapes {
+  display: none;
+}
+.main-menu-hexagon {
+  margin-top: 2px;
+}
+// Kendo Grid
+.kendo-grid-row {
+  height: calc(100vh - 28rem);
+}
+.k-grid {
+  border-color: $primary-400;
+  min-height: 12rem;
+  height: calc(100vh - 28rem);
+}
+.k-grid-header,
+.k-header,
+th.k-header,
+.k-grid-header-wrap,
+.k-grouping-header,
+.k-grouping-header .k-group-indicator,
+.k-grid td,
+.k-grid-footer,
+.k-grid-footer-wrap,
+.k-grid-content-locked,
+.k-grid-footer-locked,
+.k-grid-header-locked,
+.k-filter-row > td,
+.k-filter-row > th {
+  border-color: $primary-300;
+  color: $black;
+}
+.grid-header-cell {
+  background-color: $primary-200;
+  color: $black;
+}
+.grid-button-cell {
+  padding: 0.2rem 0.48rem !important;
+}
+.k-column-title {
+  font-weight: 600;
+}
+.k-grid tr.k-alt {
+  background-color: $primary-050;
+}
+.k-grid a {
+  color: $primary;
+}
+// Buttons
+.grid-button {
+  margin-right: 0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.32rem;
+  // padding-left: 0.8rem;
+  // padding-right: 0.8rem;
+}
+.toolbar-button {
+  margin-right: 0.2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.48rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.toolbar-button-flat {
+  color: $black;
+  margin-right: 0.2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.48rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.toolbar-button-last {
+  margin-right: 0.2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.48rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.toolbar-app-button {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.dialog-button {
+  margin-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.48rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.form-action-button {
+  margin-right: 0;
+  padding-top: 0.4rem;
+  padding-bottom: 0.48rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.checkbox-list-item {
+  display: flex;
+  padding-top: 0.2rem;
+  padding-bottom: 0.6rem;
+  align-items: center;
+}
+.k-checkbox-in-list {
+  border: 1px solid $primary !important;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-left: 0;
+  margin-right: 0.6rem;
+}
+.checkbox-list-details {
+  flex: 1;
+  margin-left: 10px;
+}
+.checkbox-list-name {
+  color: $gray-900;
+  font-weight: 400;
+}
+.checkbox-list-description {
+  font-size: 0.7rem;
+  color: $gray-900;
+}
+
+.date-picker-label {
+  margin-right: 0.48rem !important;
+}
+.kendo-appbar {
+  width: 100%;
+  background-color: $primary-005;
+}
+.icon-navbar {
+  padding: 1rem 1rem;
+  font-size: 1.6rem !important;
+  color: $dark-grey;
+}
+.kendo-appbar-main-menu {
+  display: block;
+}
+.kendo-appbar-admin-menu {
+  position: fixed;
+  right: 0.4rem;
+  top: 0.68rem;
+}
+.kendo-appbar-overflow-menu {
+  display: none !important;
+  position: fixed;
+  right: 6.6rem;
+  top: 1rem;
+  color: $primary;
+}
+.k-appbar {
+  box-shadow: none !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  padding-left: $main-menu-padding-left;
+}
+kendo-badge-container {
+  margin-right: 8px;
+  width: 100%;
+}
+.k-appbar-section > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.k-appbar-section > ul > li {
+  margin: 0 0.92rem;
+  font-weight: 600;
+}
+.appbar-link {
+  color: $primary;
+  text-decoration: none;
+}
+.appbar-link:hover {
+  color: $secondary;
+  text-decoration: none;
+}
+.k-tilelayout {
+  padding: 0 !important;
+}
+.k-card-title {
+  font-weight: 600;
+}
+.k-card {
+  border-color: $primary-500 !important;
+}
+.k-card-header {
+  background-color: $primary-050;
+}
+.k-card-title {
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+  opacity: 1 !important;
+  color: $primary;
+}
+.k-menu-link {
+  padding-left: 0;
+  padding-right: 0;  
+}
+.k-menu-link-main-menu {
+  padding-left: 0;
+  padding-right: 0;
+}
+.k-menu-link-dashboard-menu {
+  color: $gray-700;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 12.8rem;
+  padding-top: 0.06rem;
+  padding-bottom: 0.06rem;
+}
+.k-menu-link-dashboard-menu:hover {
+  color: $secondary;
+}
+.k-menu-link-dashboard-page-menu {
+  text-align: left;
+  font-size: 1rem;
+  color: $primary;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  padding-top: 0.06rem;
+  padding-bottom: 0.06rem;
+}
+.k-list .k-item,
+.k-list-optionlabel {
+  color: $gray-600;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 1.2rem;
+}
+.k-popup {
+  // border-color: $primary-300 !important;
+  border-radius: 0.25rem;
+}
+.k-breadcrumb {
+  // font-size: 1rem;
+  font-weight: 400;
+}
+.k-breadcrumb-root-link {
+  padding-top: 0.12rem;
+  padding-left: 0;
+  padding-right: 0.25rem;
+}
+.k-breadcrumb-link {
+  padding-top: 0.12rem;
+  padding-left: 0.6rem;
+  padding-right: 0.5rem;
+}
+.k-breadcrumb-delimiter,
+.k-breadcrumb-delimiter-icon {
+  font-size: 0.9rem;
+}
+.k-list .k-item,
+.k-list-optionlabel {
+  padding: 0.4rem 1rem;
+  width: 100%;
+}
+.k-icon-toolbar {
+  margin-right: 0 !important;
+  font-size: 20px;
+}
+.k-toolbar {
+  padding: 0;
+  border-style: none;
+  background-color: transparent;
+}
+.k-grid-norecords {
+  text-align: left;
+}
+kendo-label > .k-label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+kendo-label.k-radio-label > .k-label {
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.k-dropdown {
+  width: 100% !important;
+}
+.k-textbox {
+  width: 100%;
+  // margin-top: 0.52rem;
+}
+.k-textarea {
+  width: 100%;
+  // margin-top: 0.52rem;
+}
+.k-i-success::before {
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
+  margin-right: 0.6rem;
+}
+form {
+  height: 98%;
+}
+.k-window-content,
+.k-prompt-container {
+  padding-top: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.k-dialog-titlebar {
+  background-color: $primary;
+  color: $primary-contrast;
+}
+.k-dialog-confirmation {
+  top: 5.2rem;
+  height: 16rem;
+}
+.k-dialog-confirmation-content {
+  margin: 1.6rem 0rem;
+  text-align: center;
+}
+
+.k-listview {
+  border-color: $primary-700;
+}
+.listview-loader-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.list-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.list-item.border-bottom {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $primary-700 !important;
+}
+.list-item-col-heading {
+  color: $gray-600;
+  min-width: 12rem;
+  font-weight: 600;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.list-item-col {
+  flex: 1;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.list-item-col-noflex {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.top-nav-mobile-menu {
+  padding-left: 0.5rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  overflow: hidden;
+  position: relative;
+}
+// .top-nav-mobile-menu-links-area {
+//   // border-top-color: $primary-200;
+//   // border-top-width: 1px;
+//   // border-top-style: solid;
+//   margin-top: 2.4rem;
+// }
+.top-nav-mobile-menu #topNavMobileMenuLinks {
+  display: none;
+  padding-top: 0.8rem;
+}
+.top-nav-mobile-menu a {
+  text-decoration: none;
+  display: block;
+}
+.top-nav-mobile-menu a:hover {
+  color: $primary;
+}
+.active {
+  color: $primary;
+}
+.top-nav-mobile-menu a.icon {
+  display: block;
+  padding: 0.4rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+.k-menu-link-topnav-mobile-menu {
+  color: $gray-700;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 12.8rem;
+  padding-top: 0.06rem;
+  padding-bottom: 0.06rem;
+}
+.k-menu-link-topnav-mobile-menu:hover {
+  color: $secondary;
+}
+.app-page-content {
+  margin-top: 4.2rem;
+}
+
+
+// DASHBOARD
+/* The side navigation menu */
+.sidenav {
+  height: calc(100vh - 4.2rem);
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 4.2rem; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  transition: 0.1s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav-toggle-icon {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  padding-left: 1.28rem;
+  padding-right: 1.1rem;
+  font-size: 1.2rem;
+  color: $dark-grey;
+}
+.sidenav-toggle {
+  padding-left: 0.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.2rem;
+  outline: 0;
+  color: $black;
+  font-size: 1.2rem;
+  line-height: 2;
+  display: flex;
+  flex-flow: row nowrap;
+  color: $dark-grey;
+}
+.sidenav-menuitem {
+  padding-left: 0rem;
+  outline: 0;
+  color: $black;
+  font-size: 1rem;
+  line-height: 2;
+  display: flex;
+  flex-flow: row nowrap;
+  color: $dark-grey;
+}
+.sidenav-menuitem-icon {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  padding-left: 1.28rem;
+  padding-right: 1.48rem;
+  font-size: 1.2rem;
+  color: $dark-grey;
+}
+#sidenav-menu-expanded {
+  display: block;
+}
+#sidenav-menu-collapsed {
+  display: none;
+}
+
+#apppage {
+  height: calc(100vh - 6.82rem);
+  transition: margin-left 0.1s;
+  padding: 0;
+  margin-left: 15.6rem;
+}
+.apppage-content {
+  height: calc(100vh - 6.82rem);
+  transition: margin-left 0.1s;
+  padding-top: 1.4rem;
+  padding-bottom: 1rem;
+  padding-left: 2.4rem;
+  padding-right: 0;
+}
+
+
+// /* The navigation menu links */
+// .sidenav a {
+//   // padding: 8px 8px 8px 32px;
+//   text-decoration: none;
+//   font-size: 1rem;
+//   color: #000000;
+//   display: block;
+//   transition: 0.3s;
+// }
+
+
+
+
+.dashboard-mobile-menu {
+  // width: 18rem;
+  // overflow: hidden;
+  margin-top: 3rem;
+  margin-bottom: 1.6rem;
+  position: relative;
+}
+.dashboard-mobile-menu #dashboardMobileMenuLinks {
+  display: none;
+}
+.dashboard-mobile-menu a {
+  text-decoration: none;
+  display: block;
+}
+.dashboard-mobile-menu a:hover {
+  color: $primary;
+}
+.dashboard-mobile-menu a.icon {
+  display: block;
+  padding: 0.4rem;
+  position: fixed;
+  width: 50px;
+  top: 5.6rem;
+}
+
+.dashboard-mobile-menu-icon {
+  color: $black;
+  font-size: 24px; /* Sets icon size to 24px */
+}
+.top-nav-mobile-menu-icon {
+  font-size: 24px; /* Sets icon size to 24px */
+}
+
+/* Small devices (600px and less) */
+@media only screen and (max-width: 600px) {
+  // .kendo-appbar {
+  //   display: none;
+  // }
+  .dashboard-menu-item-area {
+    display: none;
+  }
+  .sidenav {
+    display: none;
+  }
+  .sidenav-dashboard {
+    display: block;
+  }
+  // .sidenav {
+  //   width: 50px;
+  //   overflow: hidden;
+  //   text-align: center;
+  //   padding-top: 4.8rem;
+  //   padding-left: 0;
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  .top-nav-mobile-menu-links-area {
+    margin-top: 0.4rem;
+  }
+  main > .container-fluid {
+    padding-top: $header-margin;
+    padding-bottom: 20px;
+    padding-right: 0.5rem;
+    padding-left: 70px;
+  }
+  .k-window {
+    top: 0.15rem !important;
+    left: 0.1rem !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .footer {
+    padding-left: 0.6rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up to 768) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  // .kendo-appbar {
+  //   display: none;
+  // }
+  .dashboard-menu-item-area {
+    display: none;
+  }
+  .top-nav-mobile-menu-links-area {
+    margin-top: 2.4rem;
+  }
+  .sidenav {
+    display: none;
+  }
+  .sidenav-dashboard {
+    display: block;
+  }
+  main > .container-fluid {
+    padding-top: $header-margin;
+    padding-bottom: 20px;
+    padding-right: 0.5rem;
+    padding-left: 70px;
+  }
+  .k-window {
+    top: 0 !important;
+    width: 600px;
+    max-width: 600px;
+    // height: calc(100vh - 1rem) !important;
+  }
+  .footer {
+    padding-left: 0.6rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  // .kendo-appbar {
+  //   display: none;
+  // }
+  .dashboard-menu-item-area {
+    display: none;
+  }
+  .top-nav-mobile-menu-links-area {
+    margin-top: 2.4rem;
+  }
+  .sidenav {
+    display: none;
+  }
+  .sidenav-dashboard {
+    display: block;
+  }
+  .appbar-items,
+  .user-actions kendo-badge-container,
+  .k-appbar-separator,
+  kendo-avatar.k-avatar {
+    display: block;
+  }
+  .overflow-button {
+    display: none;
+  }
+  main > .container-fluid {
+    padding-top: $header-margin;
+    padding-bottom: 20px;
+    padding-right: 0.5rem;
+    padding-left: 70px;
+  }
+  .k-window {
+    top: 0 !important;
+    width: 600px;
+    // height: calc(100vh - 1rem) !important;
+  }
+  .footer {
+    padding-left: 0.6rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  // .top-nav-mobile-menu a.icon {
+  //   display: none;
+  // }
+  .top-nav-mobile-menu {
+    display: none;
+  }
+  .dashboard-mobile-menu {
+    display: none;
+  }
+  .sidenav {
+    display: block;
+  }
+  .sidenav-dashboard {
+    display: none;
+  }
+  .k-window {
+    top: 0 !important;
+    width: 600px;
+    // height: calc(100vh - 1rem) !important;
+  }
+}
+
+//Autodesk
+.job-details {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.adsk-viewing-viewer {
+  height: 80% !important;
+  width: 80% !important;
+  overflow: hidden;
+}
+.k-window {
+  width: 36rem;
+  // height: calc(100vh - 1.2rem);
+  height: 100vh !important;
+  right: 0;
+  left: auto !important;
+}

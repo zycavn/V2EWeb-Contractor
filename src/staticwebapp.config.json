@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "route": "/auth-/auth-end",
+      "redirect": "/.auth/login/aad"
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  }
+}

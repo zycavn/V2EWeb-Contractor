@@ -1,0 +1,200 @@
+h1 {
+  color: $primary;
+}
+h2 {
+  color: $primary;
+}
+h3 {
+  color: $primary;
+}
+h4 {
+  color: $primary;
+}
+h5 {
+  color: $primary;
+}
+h6 {
+  color: $primary;
+}
+h3.form-header {
+  color: $primary-contrast;
+}
+.callout {
+  color: $primary;
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+}
+a {
+  color: $primary;
+  text-decoration: none;
+}
+a:hover {
+  color: $primary-900;
+  text-decoration: none;
+}
+.hexagon {
+  fill: $primary;
+  stroke: $primary;
+}
+.module-heading {
+  color: $primary;
+}
+.checkbox-grid {
+  border: 1px solid $primary;
+}
+.k-checkbox {
+  border: 1px solid $primary !important;
+}
+.alert-icon {
+  color: $primary;
+  font-size: 1.6rem;
+}
+
+// NAV
+.navbar {
+  border-bottom-color: $primary;
+  background-color: $primary-010;
+}
+// DASHBOARD
+.sidenav {
+  background-color: $primary-050;
+  border-right-color: $primary-400;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.sidenav-dashboard-background {
+  background-color: $primary-050;
+}
+.row-toolbar {
+  border-top: 1px solid $primary-400;
+  border-bottom: 1px solid $primary-400;
+}
+.row-app-toolbar {
+  background-color: $primary-050;
+  color: $black;
+  border-bottom-color: $primary-400;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.contact {
+  border: 1px solid $primary-600 !important;
+}
+.btn-listview {
+  color: $primary;
+}
+// Kendo Grid
+.k-grid {
+  border-color: $primary-400;
+}
+.k-grid-header,
+.k-header,
+th.k-header,
+.k-grid-header-wrap,
+.k-grouping-header,
+.k-grouping-header .k-group-indicator,
+.k-grid td,
+.k-grid-footer,
+.k-grid-footer-wrap,
+.k-grid-content-locked,
+.k-grid-footer-locked,
+.k-grid-header-locked,
+.k-filter-row > td,
+.k-filter-row > th {
+  border-color: $primary-300;
+}
+.grid-header-cell {
+  background-color: $primary-200;
+}
+.k-grid tr.k-alt {
+  background-color: $primary-050;
+}
+.k-grid a {
+  color: $primary;
+}
+.k-grid td.k-state-selected, .k-grid tr.k-state-selected > td {
+  background-color: $primary-500;
+}
+.kendo-appbar {
+  background-color: $primary-010;
+}
+.appbar-link {
+  color: $primary;
+}
+.appbar-link:hover {
+  color: $secondary;
+}
+.k-card {
+  border-color: $primary-500 !important;
+}
+.k-card-header {
+  background-color: $primary-050;
+}
+.k-card-title {
+  color: $primary;
+}
+.k-menu-link-dashboard-page-menu {
+  color: $primary;
+}
+.k-breadcrumb-link {
+  color: $primary;
+}
+.k-dialog-titlebar {
+  background-color: $primary;
+  color: $primary-contrast;
+}
+.k-listview {
+  border-color: $primary-700;
+}
+.list-item.border-bottom {
+  border-bottom-color: $primary-700 !important;
+}
+.top-nav-mobile-menu a:hover {
+  color: $primary;
+}
+.active {
+  color: $primary;
+}
+.dashboard-mobile-menu a:hover {
+  color: $primary;
+}
+.k-pager-numbers .k-link.k-state-selected {
+  color: $primary;
+  background-color: $primary-300;
+}
+.k-button-solid-primary {
+  border-color: $primary;
+  background-color: $primary;
+}
+.k-button-solid-primary:hover {
+  border-color: $primary-900;
+  background-color: $primary;
+}
+.k-button-solid-primary:active {
+  border-color: $primary-900;
+}
+.k-button-solid-primary:focus {
+  border-color: $primary-900;
+}
+
+.k-stepper .k-step-current .k-step-indicator {
+  border-color: $primary;
+  background-color: $primary;
+}
+.k-stepper .k-step-done .k-step-indicator {
+  border-color: $primary;
+  background-color: $primary;
+}
+.k-stepper > .k-progressbar .k-state-selected {
+  background: $primary;
+}
+.k-radio:checked, .k-radio.k-checked {
+  border-color: $primary;
+  color: $white;
+  background-color: $primary;
+}
+.col-form-header {
+  color: $primary-contrast;
+}
+.form-header {
+  color: $primary-contrast;
+}

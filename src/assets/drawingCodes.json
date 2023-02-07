@@ -1,0 +1,272 @@
+{
+    "drawingCodes": [
+        {
+            "id": 11,
+            "name": "V2E001",
+            "description": "PRELIMINARY - PRE-SITE",
+            "drawingSubCodes": [
+                {
+                    "id": 36,
+                    "name": "V2E001-100",
+                    "description": "DRAWINGS & PLANS",
+                    "layerName": "11_PRELIMS"
+                },
+                {
+                    "id": 37,
+                    "name": "V2E001-200",
+                    "description": "INSURANCES & LEVIES",
+                    "layerName": "11_PRELIMS"
+                },
+                {
+                    "id": 38,
+                    "name": "V2E001-400",
+                    "description": "ENGINEERING - CIVIL & EARTHWORKS",
+                    "layerName": "11_PRELIMS"
+                },
+                {
+                    "id": 39,
+                    "name": "V2E001-800",
+                    "description": "CONSULTING FEES",
+                    "layerName": "11_PRELIMS_1"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "V2E002",
+            "description": "PRELIMINARY - SITE START",
+            "drawingSubCodes": [
+                {
+                    "id": 40,
+                    "name": "V2E002-100",
+                    "description": "SITE FENCING",
+                    "layerName": "13_SITE_SETUP"
+                },
+                {
+                    "id": 41,
+                    "name": "V2E002-300",
+                    "description": "SITE TOILET",
+                    "layerName": "13_SITE_SETUP"
+                },
+                {
+                    "id": 42,
+                    "name": "V2E002-500",
+                    "description": "SITE BINS",
+                    "layerName": "13_SITE_SETUP"
+                },
+                {
+                    "id": 43,
+                    "name": "V2E002-600",
+                    "description": "SITE SIGNAGE",
+                    "layerName": "13_SITE_SETUP"
+                },
+                {
+                    "id": 44,
+                    "name": "V2E002-700",
+                    "description": "SITE LABOUR",
+                    "layerName": "13_SITE_SETUP"
+                },
+                {
+                    "id": 45,
+                    "name": "V2E002-800",
+                    "description": "SITE CLEANING",
+                    "layerName": "13_SITE_SETUP"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "V2E003",
+            "description": "SUBSTRUCTURE",
+            "drawingSubCodes": [
+                {
+                    "id": 46,
+                    "name": "V2E003-100",
+                    "description": "EARTHWORKS",
+                    "layerName": "16_REINFORCEMENT"
+                },
+                {
+                    "id": 47,
+                    "name": "V2E003-300",
+                    "description": "REINFORCING",
+                    "layerName": "16_REINFORCEMENT"
+                },
+                {
+                    "id": 48,
+                    "name": "V2E003-400",
+                    "description": "CONCRETE",
+                    "layerName": "16_SLAB"
+                },
+                {
+                    "id": 49,
+                    "name": "V2E003-500",
+                    "description": "CONCRETE PUMP",
+                    "layerName": "16_REINFORCEMENT"
+                },
+                {
+                    "id": 50,
+                    "name": "V2E003-800",
+                    "description": "CONRETE LABOUR",
+                    "layerName": "16_REINFORCEMENT"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "V2E004",
+            "description": "SERVICES",
+            "drawingSubCodes": [
+                {
+                    "id": 51,
+                    "name": "V2E004-100",
+                    "description": "PLUMBING SERVICES - UNDERGROUNDS",
+                    "layerName": null
+                },
+                {
+                    "id": 52,
+                    "name": "V2E004-200",
+                    "description": "ELECTRICAL SERVICES - UNDERGROUNDS",
+                    "layerName": "23_ELECTRICAL/APPLIANCES"
+                },
+                {
+                    "id": 53,
+                    "name": "V2E004-300",
+                    "description": "GAS SERVICES",
+                    "layerName": "11_SERVICES"
+                },
+                {
+                    "id": 54,
+                    "name": "V2E004-400",
+                    "description": "DATA SERVICES",
+                    "layerName": null
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "V2E005",
+            "description": "STRUCTURE",
+            "drawingSubCodes": [
+                {
+                    "id": 55,
+                    "name": "V2E005-200",
+                    "description": "WALL FRAMES",
+                    "layerName": "17A_FRAME"
+                },
+                {
+                    "id": 56,
+                    "name": "V2E005-400",
+                    "description": "ROOF FRAMES & TRUSSES",
+                    "layerName": "17A_FRAME"
+                },
+                {
+                    "id": 57,
+                    "name": "V2E005-500",
+                    "description": "WINDOWS",
+                    "layerName": null
+                },
+                {
+                    "id": 58,
+                    "name": "V2E005-600",
+                    "description": "1ST FIX CARPENTRY",
+                    "layerName": "17A_FRAME"
+                },
+                {
+                    "id": 59,
+                    "name": "V2E005-725",
+                    "description": "SARKING",
+                    "layerName": null
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "V2E006",
+            "description": "EXTERNAL FINISHES",
+            "drawingSubCodes": [
+                {
+                    "id": 60,
+                    "name": "V2E006-100",
+                    "description": "ROOF COVER",
+                    "layerName": "21_ROOF"
+                },
+                {
+                    "id": 61,
+                    "name": "V2E006-200",
+                    "description": "BRICK SUPPLY",
+                    "layerName": null
+                },
+                {
+                    "id": 62,
+                    "name": "V2E006-300",
+                    "description": "BRICK LINTELS",
+                    "layerName": null
+                },
+                {
+                    "id": 63,
+                    "name": "V2E006-400",
+                    "description": "BRICK LABOUR",
+                    "layerName": null
+                },
+                {
+                    "id": 64,
+                    "name": "V2E006-700",
+                    "description": "EAVES SUPPLY",
+                    "layerName": "21_EAVES"
+                },
+                {
+                    "id": 65,
+                    "name": "V2E006-750",
+                    "description": "EAVES CARPENTRY",
+                    "layerName": "21_EAVES"
+                },
+                {
+                    "id": 66,
+                    "name": "V2E006-780",
+                    "description": "EXTERNAL PAINTER",
+                    "layerName": null
+                },
+                {
+                    "id": 67,
+                    "name": "V2E006-800",
+                    "description": "GARAGE DOORS",
+                    "layerName": null
+                },
+                {
+                    "id": 68,
+                    "name": "V2E006-900",
+                    "description": "EXTERNAL DOORS",
+                    "layerName": null
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "V2E007",
+            "description": "INTERNAL FINISHES",
+            "drawingSubCodes": []
+        },
+        {
+            "id": 18,
+            "name": "V2E008",
+            "description": "FIT OUT",
+            "drawingSubCodes": []
+        },
+        {
+            "id": 19,
+            "name": "V2E009",
+            "description": "FINALS",
+            "drawingSubCodes": []
+        },
+        {
+            "id": 20,
+            "name": "V2E010",
+            "description": "EXTERNAL WORKS",
+            "drawingSubCodes": []
+        }
+    ],
+    "resultCount": 0,
+    "referenceId": "846272d6-a1e3-4af7-86d9-93a162a26825",
+    "statusCode": 200,
+    "message": ""
+}

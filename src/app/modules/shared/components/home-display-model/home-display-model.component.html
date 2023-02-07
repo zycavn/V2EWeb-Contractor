@@ -1,0 +1,59 @@
+<div *ngIf="isLoading && !hasError">
+	<div class="row">
+		<div class="col">
+			<h1>Job Drawing Viewer</h1>
+		</div>
+	</div>
+	<div class="row model-viewer-row">
+		<div class="col">
+			<div class="alert alert-info">
+				<div class="row alert-heading">
+					<div class="col">
+						Information
+					</div>
+				</div>
+				<div class="row alert-content">
+					<div class="col">
+						Please wait while we load the drawing.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="row">
+		<div class="col job-details">
+			<!-- Job details here -->
+			<!-- {{ drawingViewModel?.job?.jobNumber }} - {{ drawingViewModel?.job?.address?.addressOne }} {{ drawingViewModel?.job?.address?.addressTwo }}, {{ drawingViewModel?.job?.address?.suburb }}, {{ drawingViewModel?.job?.address?.state }}, {{ drawingViewModel?.job?.address?.postCode }} -->
+		</div>
+	</div>
+	<div class="row model-viewer-row">
+		<div class="col">
+			<div id="forgeViewer"></div>
+		</div>
+	</div>
+</div>
+<div *ngIf="hasError">
+	<div class="row">
+		<div class="col">
+			<h1>Job Drawing Viewer</h1>
+		</div>
+	</div>
+	<div class="row model-viewer-row">
+		<div class="col">
+			<div class="alert alert-danger" style="margin-top: 1.2rem;">
+				<div class="row alert-heading">
+					<div class="col">
+						A problem occured!
+					</div>
+				</div>
+				<div class="row alert-content">
+					<div class="col">
+						{{ errorMessage }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
